@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<Message>> call, Response<List<Message>> response) {
                 if(response.isSuccessful()){
-                    Log.d( "onResponse: ", response.body().toString());
+                    Log.d( "onResponse  : ", response.body().toString());
                 }
                 else{
                     Log.d( "onResponse: ", String.valueOf(response.code()));
